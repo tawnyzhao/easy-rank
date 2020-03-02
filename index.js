@@ -29,7 +29,7 @@ const initialNavigation = async (page) => {
 
 (async () => {
     const browser = await puppeteer.launch(
-        { headless: false }
+        { headless: true }
     );
 
     const page = await browser.newPage();

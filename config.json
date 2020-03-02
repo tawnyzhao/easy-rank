@@ -1,0 +1,14 @@
+{
+    "email": "",
+    "password": "",
+    "mailer": {
+        "auth": {
+            "user": "",
+            "pass": ""
+        },
+        "options": {
+            "fromEmail": "",
+            "toEmail": ""
+        }
+    }
+}

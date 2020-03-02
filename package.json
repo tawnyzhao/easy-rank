@@ -3,9 +3,21 @@
   "version": "1.0.0",
   "description": "WaterlooWorks reminder",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tawnyzhao/easy-rank",
+    "private": true
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }

@@ -10,9 +10,9 @@ const reload = async (page, text) => {
         console.log("Rankings are out!");
         console.log(text);
         await page.screenshot({ path: 'screenshot.png' });
+        await mailer.sendEmail(text, 'screenshot.png');
     }
     console.log("Checked at: " + new Date().toJSON().slice(0, 19).replace(/[-T]/g, ':'));
-    await mailer.sendEmail(text, 'screenshot.png');
 }
 
 const initialNavigation = async (page) => {

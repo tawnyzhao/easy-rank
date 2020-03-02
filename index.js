@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const mailer = require('./mailer.js');
 const config = require('./config.json');
 
 const reload = async (page, text) => {
@@ -9,8 +10,9 @@ const reload = async (page, text) => {
         console.log("Rankings are out!");
         console.log(text);
         await page.screenshot({ path: 'screenshot.png' });
+        await mailer.sendEmail(text, 'screenshot.png');
     }
-    console.log("Logged at: " + new Date().toJSON().slice(0, 19).replace(/[-T]/g, ':'));
+    console.log("Checked at: " + new Date().toJSON().slice(0, 19).replace(/[-T]/g, ':'));
 }
 
 const initialNavigation = async (page) => {
@@ -27,7 +29,7 @@ const initialNavigation = async (page) => {
 
 (async () => {
     const browser = await puppeteer.launch(
-        {headless: false}
+        { headless: false }
     );
 
     const page = await browser.newPage();

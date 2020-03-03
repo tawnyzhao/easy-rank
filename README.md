@@ -1,5 +1,5 @@
 # easy-rank
-🔃 An easy way to check your WaterlooWorks rankings!
+🔃 An easy way to check your WaterlooWorks rankings and matches!
 
 ## Overview
 A Node.js app will automatically alert you when WaterlooWorks job rankings come out. Powered by Puppeteer. 

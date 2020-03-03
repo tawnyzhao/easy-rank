@@ -10,5 +10,6 @@
             "fromEmail": "",
             "toEmail": ""
         }
-    }
+    },
+    "delay": 10000
 }

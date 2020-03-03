@@ -10,9 +10,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js --dev"
   },
-  "author": "",
+  "author": "Tony Zhao",
   "license": "ISC",
   "dependencies": {
     "nodemailer": "^6.4.4",

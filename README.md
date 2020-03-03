@@ -4,6 +4,9 @@
 ## Overview
 A Node.js app will automatically alert you when WaterlooWorks job rankings come out. Powered by Puppeteer. 
 
++ `index.js` contains the main puppeteer script
++ `mailer.js` contains functions to send emails using SMTP
+
 ## Usage  
 1. Fill in `config.json` with your credentials
   + `config.email` and `config.password` is your WatID

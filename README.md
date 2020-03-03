@@ -8,8 +8,15 @@ This Node.js app will automatically alert you when WaterlooWorks job rankings co
 1. Fill in `config.json` with your credentials
   + `config.email` and `config.password` is your WatID
   + `config.mailer.auth` is the email server credentials
-  + `config.mailer.options` contain options such as to and from email
-2. Run `npm start` 
+  + `config.mailer.options` contain options such as to and from email  
+2. Run `npm start`  
+3. You will receive and email when rankings come out. 
+
+## Debug
+
+1. Run `npm run dev`
+  + This will run Puppeteer in non-headless mode.
+  + This will also print out the scraped text. 
 
 ## Legal
 Software is provided as-is, use at your own risk. 
